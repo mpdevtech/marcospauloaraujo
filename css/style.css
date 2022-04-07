@@ -43,6 +43,21 @@ img {
       transition: 0.3s;
       box-shadow: 0 0 1rem #FF5100;
    } 
+   .nav-links {
+      display: flex;
+   }
+   .social {
+      padding-left: 20px;
+      font-size: 1.2rem;
+   }
+   
+   .fa-brands:hover {
+      color: #FF7D40;
+      transition: 0.2s;
+      /* box-shadow: 0 0 1rem #FF5100; */
+
+     
+   }
 
 /* MAIN */
    .introducao {
@@ -106,7 +121,6 @@ img {
       word-break: break-all;
       color: #4c5074;
       max-width: 3ch;
-      
    }
    .experiencia-texto {
       font-size: 1.2rem;
@@ -171,6 +185,18 @@ img {
       border-radius: 5px;
       padding: 5px 10px;
    }
+   @media (max-width: 768px) {
+      .experiencia {
+         grid-template-columns: 1fr;
+         gap: 40px;
+      }
+      .subtitulo {
+         letter-spacing: -3px;
+         font-size: 3rem;
+         max-width: initial;
+
+      }
+   }
 
    /* FORMAÇÃO */
    .formacao {
@@ -199,7 +225,6 @@ img {
       margin-bottom: 30px;
       color: #FFF9F6;
    }
-   
    .curso-item {
       margin-bottom: 20px;
    }
@@ -218,56 +243,47 @@ img {
       color: #0f0e15;
       border-radius: 5px;
       padding: 5px 10px;
-
    }
    .certificado  {
       padding: 5px 10px;
       border-radius: 5px;
       color: #4c5074;
    }
-   .certificado:hover, .icon:hover a:hover {
+   .certificado:hover  {
       color: #FF7D40;
    }
-  
-  
-   
-
-
-
-
-
-
-
-   
-
-
-
-
-
-   @media (max-width: 768px) {
-      .experiencia {
-         grid-template-columns: 1fr;
-         gap: 40px;
-      }
-      .subtitulo {
-         letter-spacing: -3px;
-         font-size: 3rem;
-         max-width: initial;
-
-      }
+   /* FOOTER    */
+   .footer {
+      background-color: #161616;
+      align-items: center;
+      justify-content: center;
    }
-
-
-   
-
-@media (max-width: 768px) {
-   .header {
-      flex-direction: column;
-      gap: 40px;
-      padding: 30px;
+   .footer-container {
+      max-width: 1200px;
+      padding: 40px 20px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 40px;
+      line-height: 1.5;
+   }
+   .footer-copy {
+      color:#4c5074;
+      padding-bottom: 40px;
+      text-align: center;
+   }
+   .contatos-itens {
+      font-weight: bold;
+   }
+   .btn-contact {
+      background-color: #FF5100;
+      border: 1px solid #FF5100;
+      padding: 10px 40px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
    }
    
-}
 
 @media (max-width: 1200px) {
    .titulo {
@@ -282,26 +298,90 @@ img {
    .img-profile {
       max-width: 350px;
    }
+   .header {
+      flex-direction: column;
+      gap: 40px;
+      padding: 30px;
+   }
    .empresa-ano {
      position: initial;
      order: 1;
      width: initial;
      text-align: left;
      color: #FFF9F6;
-  }
+   }
+  .formacao-container {
+   grid-template-columns: 1fr;
+   gap: 40px;
+   }
+   .subtitulo-form {
+      letter-spacing: -3px;
+      font-size: 3rem;
+      max-width: initial;
+   }
 }
 @media (max-width: 425px) {
+   .links-social {
+      display: flex;
+      padding-top: 10px;
+   }
+   .nav-links {
+      flex-direction: column;
+      align-items: center;
+   }
+   .header {
+      gap: 20px;
+   }
+   .header-menu {
+      gap: 10px;
+      padding-bottom: 10px;
+   }
    .introducao  {
       display: block;
+   }
+   .intro-cta {
+      text-align: center;
+   }
+   .titulo {
+      font-size: 2.5rem;
+      letter-spacing: -1px;
    }
    .empresa {
       grid-template-columns: 1fr;
    }
-  .empresa-ano {
-     position: initial;
-     order: 1;
-     width: initial;
-     text-align: left;
-     color: #FFF9F6;
-  }
+   .empresa-ano {
+      position: initial;
+      order: 1;
+      width: initial;
+      text-align: left;
+      color: #FFF9F6;
+   }
+   .formacao-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+   }
+   .subtitulo-form {
+      letter-spacing: -3px;
+      font-size: 3rem;
+      max-width: initial;
+   }
+   .footer-container {
+      grid-template-columns: 1fr;
+      }
+   .btn-contact {
+      width: 100%;
+   }
+   .logo-mp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .footer-copy {
+      align-items: center;
+      font-size: .8rem;
+   }
+   .footer-texto {
+      font-size: .8rem;
+      text-align: center;
+   }
 }

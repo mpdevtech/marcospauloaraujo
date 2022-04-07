@@ -4,20 +4,20 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>mp dev Portfólio</title>
+   <title>MPDev</title>
    <link rel="stylesheet" href="css/style.css">
    <!-- FONT AWESOME -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
    <!-- CSS -->
-   <link rel="icon" type="image/x-icon" href="css/img/favicon.ico">
+   <link rel="icon" type="image/x-icon" href="css/img/icons/favicon.ico">
    
 </head>
 <body>
    <header class="header">
       <a href="#">
-         <img src="css/img/mpdev..png" alt="logo mpdev">
+         <img src="css/img/mpdev.png" alt="logo mpdev">
       </a>
-      <nav>
+      <nav class="nav-links">
          <ul class="header-menu">
             <li>
                <a href="#experiencia">Experiência</a>
@@ -29,11 +29,22 @@
                <a href="#contato">Contato</a>
             </li>
          </ul>
+         <div class="links-social">
+            <a href="https://github.com/mpdevtech" class="social" target="_blank">
+               <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/marcospaulloaraujo/" class="social" target="_blank">
+               <i class="fa-brands fa-instagram icone"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/marcospauloaraujo/" class="social" target="_blank">
+               <i class="fa-brands fa-linkedin icone"></i>
+            </a>
+         </div>
       </nav>
    </header>
    <main class="introducao">
       <img src="css/img/img-feed/img-perifil.png" alt="imagem de marcos paulo" class="img-profile">
-      <div>
+      <div class="intro-cta">
          <p class="paragrafo">
             Olá, eu sou Marcos Paulo &#128075
          </p>
@@ -43,7 +54,9 @@
          <p class="paragrafo">
             Em transição de carreira
          </p>
-         <input type="button" value="Entre em contato agora" class="button-contact">
+         <a href="https://api.whatsapp.com/send?phone=5584981780838&text=Ol%C3%A1,%20vim%20do%20Instagram%20e%20queria%20fazer%20um%20or%C3%A7amento." target="_blank">
+            <input type="button" value="Entre em contato agora" class="button-contact">
+         </a>
       </div>
    </main>
    <section class="experiencia" id="experiencia" aria-label="Experiência">
@@ -112,10 +125,10 @@
          </div>
          <div class="empresa">
             <span class="empresa-ano">2021</span>
-            <h3 class="empresa-titulo">Career Transition</h3>
+            <h3 class="empresa-titulo">Varlik Tecnologia (Transição de carreira)</h3>
             <span class="empresa-cargo">Frontend Developer</span>
             <p class="empresa-texto">
-               Iniciei os meus estudos de desenvolvimento web (Frontend) e UX/UX design.
+               Ingressei como designer gráfico e após iniciar os meus estudos de desenvolvimento web (Frontend), venho migrando de carreira.
             </p>
             <ul class="empresa-hab">
                <li>
@@ -140,34 +153,33 @@
       <div class="formacao-container">
          <h2 class="subtitulo-form">Formação<span class="ponto">.</span></h2>
          <div>
-            
             <p class="formacao-texto">
                Cursos livres realizados nos últimos meses
             </p>
             <ul class="curso-lista">
                <li class="curso-item">
                   <h3 class="curso">HTML e CSS para iniciantes
-                     <span class="horas"> / 90h</span>
                   </h3>
                   <span class="instituicao">B7Web</span>
+                  <span class="horas"> 90h</span>
                   <a href="https://alunos.b7web.com.br/media/certificates/certificado_7959741.jpg" target="_blank" class="certificado">Certificado
                      <!-- <i class="fa-solid fa-arrow-right icon"></i> -->
                   </a>
                </li>
                <li class="curso-item">
                   <h3 class="curso">Front-end rápido e fácil com Bootstrap
-                     <span class="horas"> / 6h</span>
                   </h3>
                   <span class="instituicao">EBAC</span>
+                  <span class="horas"> 6h</span>
                   <a href="https://media-exp1.licdn.com/dms/image/C5622AQHJaRw0jW4vJw/feedshare-shrink_1280/0/1633459702625?e=2147483647&v=beta&t=0x4Td-eIPoaZAlg7XYPSe2yZtdi4dlnF7_qO3BK-I3M" target="_blank" class="certificado">Certificado
                      <!-- <i class="fa-solid fa-arrow-right icon"></i> -->
                   </a>
                </li>
                <li class="curso-item">
                   <h3 class="curso">Bootstrap 5 do básico ao avançado (com 4 projetos)
-                     <span class="horas"> / 16,5h</span>
                   </h3>
                   <span class="instituicao">UDEMY</span>
+                  <span class="horas"> 16,5h</span>
                   <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-d670195b-2a09-4447-a265-ba7b826d45c6.jpg?v=1646687272000" target="_blank" class="certificado">Certificado
                      <!-- <i class="fa-solid fa-arrow-right icon"></i> -->
                   </a>
@@ -176,5 +188,19 @@
          </div>
       </div> 
    </section>
+   <footer class="footer" id="contato">
+      <div class="footer-container">
+         <a href="#"  class="logo-mp">
+            <img src="css/img/mpdev.png" alt="logo mpdev">
+         </a>
+         <a href="https://api.whatsapp.com/send?phone=5584981780838&text=Ol%C3%A1,%20vim%20do%20Instagram%20e%20queria%20fazer%20um%20or%C3%A7amento." target="_blank">
+            <input type="button" value="Fale comigo" class="btn-contact">
+         </a>
+         <p class="footer-texto">
+            Estou dispovível para trabalhos por meio período, entre em contato comigo e vamos tomar um café. ☕
+         </p>
+      </div>
+      <p class="footer-copy">Marcos Paulo Araújo. Alguns direitos reservados</p>
+   </footer>
 </body>
 </html>
