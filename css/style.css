@@ -283,6 +283,13 @@ img {
       cursor: pointer;
       font-size: 1.2rem;
    }
+   .btn-contact:hover {
+      box-shadow: 0 0 1rem #FF5100;
+      background-color: #FF7D40;
+      border: 1px solid #FF7D40;
+      color: #161616;
+      transition: 0.3s;
+   }
    
 
 @media (max-width: 1200px) {
