@@ -18,58 +18,76 @@ img {
 }
 
 /* HEADER */
-.header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 30px;
-   max-width: 1200px;
-   margin: 0 auto;
-}
-.header-menu {
-   display: flex;
-   gap: 20px;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-.header-menu a {
-   font-weight: 500;
-   line-height: 1.3;
-   padding: 10px;
-}
-.header-menu a:hover {
-   background: linear-gradient(#FF7D40, #FF5100);
-   border-radius: 5px;
-   transition: 0.3s;
-} 
+   .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+   .header-menu {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .header-menu a {
+      font-weight: 500;
+      line-height: 1.3;
+      padding: 10px;
+   }
+   .header-menu a:hover {
+      background-color: #FF5100;
+      border-radius: 5px;
+      transition: 0.3s;
+      box-shadow: 0 0 1rem #FF5100;
+   } 
 
 /* MAIN */
-.introducao {
-   max-width: 1200px; 
-   padding: 40px 20px;
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: 1fr 2fr;
-   gap: 100px;
-   align-items: center;
-   margin-bottom: 30px;
-}
-.titulo {
-   font-size: 3.5rem;
-   font-weight: 800;
-   letter-spacing: -3px;
-   color: #FFF9F6;
-}
+   .introducao {
+      max-width: 1200px; 
+      padding: 40px 20px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 100px;
+      align-items: center;
+      margin-bottom: 30px;
+   }
+   .titulo {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.4;
+      letter-spacing: -3px;
+      color: #FFF9F6;
+   }
+   .button-contact {
+      background-color: #FF5100;
+      border: 1px solid #FF5100;
+      padding: 10px 40px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 1.2rem;
+   }
+   .button-contact:hover {
+      box-shadow: 0 0 1rem #FF5100;
+      background-color: #FF7D40;
+      border: 1px solid #FF7D40;
+      color: #161616;
+      transition: 0.3s;
+   }
 
 /* SECTION */
-.ponto {
-   color: #FF7D40;
-}
-.paragrafo {
-   font-size: 1.2rem;
-   color: #FF7D40;
-   font-weight: 500;
-}
+   .ponto {
+      color: #FF7D40;
+   }
+   .paragrafo {
+      font-size: 1.2rem;
+      color: #FF7D40;
+      font-weight: 500;
+   }
 
 /* EXPERIÊNCIA */
    .experiencia {
@@ -86,11 +104,13 @@ img {
       letter-spacing: -5px;
       line-height: 1;
       word-break: break-all;
-      color: #1E1F34;
-      max-width: 4ch;
+      color: #4c5074;
+      max-width: 3ch;
+      
    }
    .experiencia-texto {
       font-size: 1.2rem;
+      line-height: 1.4;
       margin-bottom: 60px;
       color: #FFF9F6;
    }
@@ -100,6 +120,7 @@ img {
    .empresa {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 10px 20px;
       padding: 20px;
       background: #161616;
       margin-bottom: 20px;
@@ -112,13 +133,103 @@ img {
       width: 4px;
       height: 20px;
       background: linear-gradient(#FF7D40, #FF5100);
+      position: absolute;
+      top: 20px;
+      left: -4px;
    }
    .empresa-ano {
       position: absolute;
       top: 20px;
-      left: -80px;
+      left: -110px;
+      color: #cdd2ff;
+      text-align: right;
+      width: 80px;
+   }
+   .empresa-titulo {
+      margin-bottom: 10px;
+   }
+   .empresa-cargo {
       color: #FF7D40;
    }
+   .empresa-texto {
+      font-size: .875rem;
+      line-height: 1.4;
+      color: #cdd2ff;
+   }
+   .empresa-hab {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-content: start;
+   }
+   .empresa-hab li {
+      font-size: .875rem;
+      font-weight: 600;
+      line-height: 1.4;
+      background-color: #cdd2ff;
+      color: #0f0e15;
+      border-radius: 5px;
+      padding: 5px 10px;
+   }
+
+   /* FORMAÇÃO */
+   .formacao {
+      background-color: #131526;
+   }
+   .formacao-container {
+      max-width: 1200px;
+      padding: 40px 20px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 100px;
+   }
+   .subtitulo-form {
+      font-size: 5.5rem;
+      font-weight: 800;
+      letter-spacing: -5px;
+      line-height: 1;
+      word-break: break-all;
+      color: #4c5074;
+      max-width: 3ch;
+   }
+   .formacao-texto {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin-bottom: 30px;
+      color: #FFF9F6;
+   }
+   
+   .curso-item {
+      margin-bottom: 20px;
+   }
+   .curso {
+      margin-bottom: 10px;
+   }
+   .horas {
+      color: #FF7D40;
+      font-weight: normal;
+   }
+   .instituicao {
+      font-size: .875rem;
+      font-weight: 600;
+      line-height: 1.4;
+      background-color: #cdd2ff;
+      color: #0f0e15;
+      border-radius: 5px;
+      padding: 5px 10px;
+
+   }
+   .certificado  {
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #4c5074;
+   }
+   .certificado:hover, .icon:hover a:hover {
+      color: #FF7D40;
+   }
+  
+  
    
 
 
@@ -127,29 +238,35 @@ img {
 
 
 
+   
 
 
-/* MEDIA */
-@media (max-width: 600px) {
-   .header {
-      flex-direction: column;
-      gap: 30px;
-      padding: 40px;
+
+
+
+   @media (max-width: 768px) {
+      .experiencia {
+         grid-template-columns: 1fr;
+         gap: 40px;
+      }
+      .subtitulo {
+         letter-spacing: -3px;
+         font-size: 3rem;
+         max-width: initial;
+
+      }
    }
-   .heaher, a:hover {
-      background-color: #FF5100;
-      border-radius: 5px;
-      transition: 0.3s;
-      color: #401400;
-      font-weight: 500;
-   }
-}
+
+
+   
+
 @media (max-width: 768px) {
    .header {
       flex-direction: column;
       gap: 40px;
       padding: 30px;
    }
+   
 }
 
 @media (max-width: 1200px) {
@@ -165,9 +282,26 @@ img {
    .img-profile {
       max-width: 350px;
    }
+   .empresa-ano {
+     position: initial;
+     order: 1;
+     width: initial;
+     text-align: left;
+     color: #FFF9F6;
+  }
 }
 @media (max-width: 425px) {
    .introducao  {
       display: block;
    }
+   .empresa {
+      grid-template-columns: 1fr;
+   }
+  .empresa-ano {
+     position: initial;
+     order: 1;
+     width: initial;
+     text-align: left;
+     color: #FFF9F6;
+  }
 }
